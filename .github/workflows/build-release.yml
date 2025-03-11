@@ -81,7 +81,7 @@ jobs:
           Please refer to [this guide](https://discourse.openbullet.dev/t/how-to-download-and-start-openbullet-2/29) for the download instructions.
 
     - name: Notify new build on discord
-      if: success() && secrets.DISCORD_WEBHOOK != ''
+      if: success() && env.DISCORD_WEBHOOK != ''
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         DISCORD_EMBEDS: |
