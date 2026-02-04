@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <Authors>Ruri</Authors>
     <Nullable>enable</Nullable>
   </PropertyGroup>
@@ -21,9 +21,12 @@
     <PackageReference Include="Jint" Version="4.5.0" />
     <PackageReference Include="JWT" Version="11.0.0" />
     <PackageReference Include="MailKit" Version="4.14.1" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.5.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.5.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.5.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="5.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="5.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="5.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="5.0.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Scripting" Version="5.0.0" />
 	<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="PuppeteerExtraSharp" Version="2.0.0" />
     <PackageReference Include="PuppeteerSharp" Version="9.0.2" />
@@ -32,8 +35,8 @@
     <PackageReference Include="Selenium.WebDriver" Version="4.30.0" />
     <PackageReference Include="SSH.NET" Version="2025.1.0" />
     <PackageReference Include="Svg" Version="3.4.7" />
-    <PackageReference Include="System.CodeDom" Version="8.0.0" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="8.0.0" />
+    <PackageReference Include="System.CodeDom" Version="10.0.2" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.2" />
     <PackageReference Include="Websocket.Client" Version="5.3.0" />
     <PackageReference Include="Yove.Proxy" Version="1.1.1" />
   </ItemGroup>
