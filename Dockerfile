@@ -4,7 +4,7 @@
 # -------
 # BACKEND
 # -------
-FROM mcr.microsoft.com/dotnet/sdk:8.0-bookworm-slim AS backend
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS backend
 
 WORKDIR /code
 
@@ -25,7 +25,7 @@ RUN cp /code/OpenBullet2.Web/dbip-country-lite.mmdb /build
 # --------
 # FRONTEND
 # --------
-FROM node:20.9.0 AS frontend
+FROM node:25.6.0 AS frontend
 
 WORKDIR /code
 
@@ -40,7 +40,7 @@ RUN mkdir /build && mv dist/* /build
 # ---------
 # AGGREGATE
 # ---------
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-bookworm-slim
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
 
 ENV DEBIAN_FRONTEND=noninteractive
 
